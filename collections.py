@@ -1,16 +1,17 @@
+import collections
 #Collections module implements special container data types and provides alternatives with some additional functionality compared to the other built-in containers. 
 #Types:Counter, namedtuple, OrderedDict, defaultdict, and deque
 
 #1. Counter: is an container that stores the elements as dictionary keys and their counts as dictionary values
-from collections import Counter
+#from collections import Counter
 a = "aaaabbbbbbbbcccccc"
-my_counter = Counter(a)
-print(my_counter)
-print(my_counter.values()) #To view the values alone
-print(my_counter.keys()) #To view the keys alone
-print(my_counter.most_common(1)) #To view the most common element, just the first one
-print(my_counter.most_common(1)[0][0]) #To view the most common element, the first tuple and the first key of thr most common tuple
-print(list(my_counter.elements())) # will print all the elements one by one arranged into a list e.g ['a', 'a', 'a', 'a' e.t.c]
+#my_counter = Counter(a)
+#print(my_counter)
+#print(my_counter.values()) #To view the values alone
+#print(my_counter.keys()) #To view the keys alone
+#print(my_counter.most_common(1)) #To view the most common element, just the first one
+#print(my_counter.most_common(1)[0][0]) #To view the most common element, the first tuple and the first key of thr most common tuple
+#print(list(my_counter.elements())) # will print all the elements one by one arranged into a list e.g ['a', 'a', 'a', 'a' e.t.c]
 
 #namedtuple: similar to a struct
 from collections import namedtuple
