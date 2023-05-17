@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../HTML Tutorials"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "User-reg"
+	}
+}
