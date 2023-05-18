@@ -32,13 +32,15 @@ c.methodname() #Calling of the method and this is done by attaching (.) followed
 
 #Example:
 class Dog():
-    def bark(self, name): #the def method and the statements in it is the objects behaviour 
-        #bark here is the method's identity and name is the object's attribute
-        self.name = name 
-        print("bark")
+    def __init__(self, name):#name is the object or instance's attribute
+        self.name = name
+        
+    def bark(self): #bark is the method's identity
+        print("I am a dog and my name is", self.name)
+        print("bark") #the def method and the statements in it are the object's behavior
 
-d = Dog()
-print(d.bark("Bingo"))
+d = Dog("Bingo")
+d.bark()
 
 #Class Attribute vs Object Attribute
 
@@ -52,7 +54,7 @@ class Dog():
         print("I'm a", self.class_attribute1)
 
 d = Dog()
-print(d.dog("Bingo"))
+d.dog("Bingo")
 
 #Special Methods 
 
