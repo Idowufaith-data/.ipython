@@ -32,12 +32,27 @@ c.methodname() #Calling of the method and this is done by attaching (.) followed
 
 #Example:
 class Dog():
-    def bark(self, name):
-        self.name = name
+    def bark(self, name): #the def method and the statements in it is the objects behaviour 
+        #bark here is the method's identity and name is the object's attribute
+        self.name = name 
         print("bark")
 
 d = Dog()
 print(d.bark("Bingo"))
+
+#Class Attribute vs Object Attribute
+
+#class attribute are variables defined in the class and it can be shared by all objects of the class while object/instance attribute are properties unique to an instance/object of a class,
+class Dog():
+    class_attribute1 = "mammal" # class attribute 
+
+    def dog(self, name): #name here is an object/instance attribute 
+        self.name = name
+        print("My name is", self.name)
+        print("I'm a", self.class_attribute1)
+
+d = Dog()
+print(d.dog("Bingo"))
 
 #Special Methods 
 
