@@ -127,3 +127,23 @@ my_string = f"the variable is {var} and {var2*2}" #the f-string method prints wh
 #Tuple are unordered, contains different data types, immutable, and does not allow duplicates
 my_tuple = tuple((1, "name", True)) #created a tuple
 my_tuple = (1, "name", True) #creates a tuple
+# Tuples are used to store multiple items in a variable. Tuples are immutable; they allow 
+# the repetiton of the same values, they allow various data types. Tuples are useful when one is
+# working on co-ordinates, values you dont want to change e.t.c
+
+# Construct a tuple
+three_numbers = tuple((1, True, 'home'))
+
+three_numbers = (1,2,3,'home',1, True)
+strings = ('land', 'home', 'earth')
+boo = (True, False, True)
+print(three_numbers)
+
+# To find the number of values in a tuple
+print(len(three_numbers))
+
+# To find the type of a tuple
+print(type(three_numbers))
+
+# To find the data type of a specific tuple
+print(type(three_numbers[0]))
